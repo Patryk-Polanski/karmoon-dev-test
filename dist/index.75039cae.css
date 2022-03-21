@@ -1,0 +1,198 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@font-face {
+  font-family: Lerty;
+  src: url("Lerty-Regular.bcd5028c.otf") format("otf"), url("Lerty-Regular.02818e33.ttf") format("truetype"), url("Lerty-Regular.387f4034.woff") format("woff"), url("Lerty-Regular.1bc4bcd0.woff2") format("woff");
+}
+@font-face {
+  font-family: Montserrat;
+  src: url("Montserrat-Medium.8c181adb.otf") format("otf"), url("Montserrat-Medium.687c1016.ttf") format("truetype"), url("Montserrat-Medium.7ea61872.woff") format("woff"), url("Montserrat-Medium.253303ac.woff2") format("woff"), url("Montserrat-Bold.6461d5c9.otf") format("oft"), url("Montserrat-Bold.6461d5c9.otf") format("oft"), url("Montserrat-Bold.6461d5c9.otf") format("oft"), url("Montserrat-Bold.6461d5c9.otf") format("oft");
+}
+@font-face {
+  font-family: Helvetica Neue;
+  src: url("Helvetica-Neue-Medium.1f1f9b34.otf") format("otf"), url("Helvetica-Neue-Medium.71b3b6fd.ttf") format("truetype"), url("Helvetica-Neue-Medium.110c6a03.woff") format("woff"), url("Helvetica-Neue-Medium.df044cee.woff2") format("woff");
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+}
+h1 {
+  font-size: 9rem;
+}
+h2 {
+  font-size: 6.1rem;
+}
+h3 {
+  font-size: 5rem;
+}
+body,
+div,
+span,
+p,
+ul,
+ol,
+blockquote {
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+  font-size: 1.8rem;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  background-color: #ffffff;
+  position: relative;
+}
+.container {
+  width: 100vw;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.content-limit {
+  margin: 0 auto;
+  max-width: 1640px;
+}
+.s-header__logo-text {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+.s-landing__heading {
+  color: #ffffff;
+}
+.s-landing__subheading {
+  color: #ffffff;
+}
+/*# sourceMappingURL=index.75039cae.css.map */

@@ -1,0 +1,21 @@
+// ZONE - Settings
+
+@import './settings/reset';
+@import './settings/variables';
+@import './settings/breakpoints';
+@import './settings/text-styles';
+@import './settings/mixins';
+@import './settings/btn-styles';
+@import './settings/svg';
+@import './settings/animations';
+
+// ZONE - Base
+
+@import './base/base';
+
+// ZONE - Sections
+
+@import './sections/header';
+@import './sections/landing';
+
+// ZONE - Components

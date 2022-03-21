@@ -1,0 +1,20 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // to make one rem equal 10px
+}
+
+body {
+    background-color: $primary-medium;
+    position: relative;
+}
+
+.container {
+    width: 100vw;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.content-limit {
+    margin: 0 auto;
+    max-width: 1640px;
+}

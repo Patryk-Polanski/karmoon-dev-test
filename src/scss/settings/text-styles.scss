@@ -1,0 +1,77 @@
+@font-face {
+    font-family: Lerty;
+    src: url('../fonts/Lerty-Regular.otf') format('otf'),
+        url('../fonts/Lerty-Regular.ttf') format('truetype'),
+        url('../fonts/Lerty-Regular.woff') format('woff'),
+        url('../fonts/Lerty-Regular.woff2') format('woff');
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url('../fonts/Montserrat-Medium.otf') format('otf'),
+        url('../fonts/Montserrat-Medium.ttf') format('truetype'),
+        url('../fonts/Montserrat-Medium.woff') format('woff'),
+        url('../fonts/Montserrat-Medium.woff2') format('woff'),
+        url('../fonts/Montserrat-Bold.otf') format('oft'),
+        url('../fonts/Montserrat-Bold.otf') format('oft'),
+        url('../fonts/Montserrat-Bold.otf') format('oft'),
+        url('../fonts/Montserrat-Bold.otf') format('oft');
+}
+
+@font-face {
+    font-family: Helvetica Neue;
+    src: url('../fonts/Helvetica-Neue-Medium.otf') format('otf'),
+        url('../fonts/Helvetica-Neue-Medium.ttf') format('truetype'),
+        url('../fonts/Helvetica-Neue-Medium.woff') format('woff'),
+        url('../fonts/Helvetica-Neue-Medium.woff2') format('woff');
+}
+
+// ZONE - mixins
+
+@mixin font-family-one() {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@mixin font-family-two() {
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+@mixin font-family-three() {
+    font-family: 'Lerty', sans-serif;
+}
+
+// ZONE - html selectors
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @include font-family-one();
+    color: $secondary-medium;
+}
+
+h1 {
+    font-size: 9rem;
+}
+
+h2 {
+    font-size: 6.1rem;
+}
+
+h3 {
+    font-size: 5rem;
+}
+
+body,
+div,
+span,
+p,
+ul,
+ol,
+blockquote {
+    @include font-family-one();
+    color: $secondary-medium;
+    font-size: 1.8rem;
+}
