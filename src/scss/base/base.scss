@@ -6,6 +6,7 @@ html {
 body {
     background-color: $primary-medium;
     position: relative;
+    overflow-x: hidden;
 }
 
 .container {
@@ -17,4 +18,26 @@ body {
 .content-limit {
     margin: 0 auto;
     max-width: 1640px;
+}
+
+// ZONE - custom scrollbar styles
+
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: $primary-medium;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $secondary-medium;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $secondary-medium;
 }

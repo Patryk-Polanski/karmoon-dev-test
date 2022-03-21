@@ -54,6 +54,7 @@ h6 {
 
 h1 {
     font-size: 9rem;
+    line-height: 9.9rem;
 }
 
 h2 {
@@ -79,4 +80,14 @@ a {
 
 a {
     text-decoration: none;
+}
+
+p {
+    line-height: 3.8rem;
+}
+
+// ZONE - helper classes
+
+.small-text {
+    font-size: 1.3rem;
 }

@@ -150,6 +150,7 @@ h6 {
 }
 h1 {
   font-size: 9rem;
+  line-height: 9.9rem;
 }
 h2 {
   font-size: 6.1rem;
@@ -172,6 +173,12 @@ a {
 a {
   text-decoration: none;
 }
+p {
+  line-height: 3.8rem;
+}
+.small-text {
+  font-size: 1.3rem;
+}
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -179,6 +186,7 @@ html {
 body {
   background-color: #ffffff;
   position: relative;
+  overflow-x: hidden;
 }
 .container {
   width: 100vw;
@@ -188,6 +196,22 @@ body {
 .content-limit {
   margin: 0 auto;
   max-width: 1640px;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000000;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000000;
 }
 .s-banner {
   border-bottom: 2px solid #000000;
@@ -199,7 +223,6 @@ body {
   transform: translateX(-3%);
 }
 .s-banner__text {
-  font-size: 1.3rem;
   text-transform: uppercase;
 }
 .s-header {
@@ -228,11 +251,32 @@ body {
 .s-header__profile-icon {
   height: 20px;
 }
+.s-landing {
+  position: relative;
+  height: 100%;
+  min-height: 100vh;
+  padding: 7.2rem 2.6rem 0;
+}
+.s-landing__hero {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.s-landing__text-wrapper {
+  text-align: left;
+  width: 80rem;
+}
 .s-landing__heading {
   color: #ffffff;
+  font-weight: bolder;
+  text-transform: uppercase;
 }
 .s-landing__subheading {
   color: #ffffff;
+  margin-top: 1.7rem;
 }
 .c-dropdown {
   cursor: pointer;
@@ -240,7 +284,6 @@ body {
   display: flex;
 }
 .c-dropdown__text {
-  font-size: 1.3rem;
   margin-right: 1.2rem;
   text-transform: uppercase;
 }
@@ -274,7 +317,6 @@ body {
   gap: 6.2rem;
 }
 .c-navigation__list-item-link {
-  font-size: 1.3rem;
   text-transform: uppercase;
 }
 /*# sourceMappingURL=index.75039cae.css.map */

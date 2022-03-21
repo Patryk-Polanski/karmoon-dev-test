@@ -1,9 +1,31 @@
 .s-landing {
+    position: relative;
+    height: 100%;
+    min-height: 100vh;
+    padding: 7.2rem 2.6rem 0;
+
+    &__hero {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }
+
+    &__text-wrapper {
+        text-align: left;
+        width: 80rem;
+    }
+
     &__heading {
         color: $primary-medium;
+        font-weight: bolder;
+        text-transform: uppercase;
     }
 
     &__subheading {
         color: $primary-medium;
+        margin-top: 1.7rem;
     }
 }
