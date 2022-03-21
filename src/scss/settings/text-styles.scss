@@ -70,8 +70,13 @@ span,
 p,
 ul,
 ol,
-blockquote {
+blockquote,
+a {
     @include font-family-one();
     color: $secondary-medium;
     font-size: 1.8rem;
+}
+
+a {
+    text-decoration: none;
 }

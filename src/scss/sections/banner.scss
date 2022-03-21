@@ -1,0 +1,14 @@
+.s-banner {
+    border-bottom: 2px solid $secondary-medium;
+    border-top: 2px solid $secondary-medium;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.1rem 0 1.2rem;
+    width: 106%;
+    transform: translateX(-3%);
+
+    &__text {
+        font-size: 1.3rem;
+        text-transform: uppercase;
+    }
+}

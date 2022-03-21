@@ -1,0 +1,27 @@
+.c-logo {
+    align-items: center;
+    display: flex;
+    align-items: flex-start;
+    flex: 1;
+    flex-basis: 0;
+    flex-direction: column;
+
+    &__text {
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+        text-transform: uppercase;
+    }
+
+    &__image-wrapper {
+        align-items: center;
+        border: 1px solid $secondary-medium;
+        display: flex;
+        height: 46px;
+        justify-content: center;
+        width: 46px;
+    }
+
+    &__image {
+        width: 22px;
+    }
+}

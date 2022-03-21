@@ -15,7 +15,12 @@
 
 // ZONE - Sections
 
+@import './sections/banner';
 @import './sections/header';
 @import './sections/landing';
 
 // ZONE - Components
+
+@import './components/dropdown';
+@import './components/logo';
+@import './components/navigation';

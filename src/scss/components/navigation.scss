@@ -1,0 +1,12 @@
+.c-navigation {
+    &__list {
+        align-items: center;
+        display: flex;
+        gap: 6.2rem;
+    }
+
+    &__list-item-link {
+        font-size: 1.3rem;
+        text-transform: uppercase;
+    }
+}
