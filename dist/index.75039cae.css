@@ -231,6 +231,16 @@ body {
   width: 106%;
   transform: translateX(-3%);
 }
+.s-banner--big {
+  padding: 2.9rem 0 4.9rem 0;
+}
+.s-banner--big .s-banner__heading {
+  font-size: 10rem;
+  letter-spacing: 0.9rem;
+  line-height: 12.7rem;
+  color: #ffffff;
+  text-shadow: -2px -2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, 2px 2px 0 #000000;
+}
 .s-banner__text {
   text-transform: uppercase;
 }
@@ -294,7 +304,7 @@ body {
   font-size: 14rem;
   white-space: nowrap;
   line-height: 14rem;
-  letter-spacing: 0.126rem;
+  letter-spacing: 1.26rem;
 }
 .s-projects__heading:last-of-type {
   color: #000000;

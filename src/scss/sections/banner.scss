@@ -7,6 +7,21 @@
     width: 106%;
     transform: translateX(-3%);
 
+    &--big {
+        padding: 2.9rem 0 4.9rem 0;
+
+        & .s-banner__heading {
+            font-size: 10rem;
+            letter-spacing: 0.9rem;
+            line-height: 12.7rem;
+
+            color: $primary-medium;
+            text-shadow: -2px -2px 0 $secondary-medium,
+                2px -2px 0 $secondary-medium, -2px 2px 0 $secondary-medium,
+                2px 2px 0 $secondary-medium;
+        }
+    }
+
     &__text {
         text-transform: uppercase;
     }
