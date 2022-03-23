@@ -14,15 +14,21 @@
             font-size: 10rem;
             letter-spacing: 0.9rem;
             line-height: 12.7rem;
-
-            color: $primary-medium;
-            text-shadow: -2px -2px 0 $secondary-medium,
-                2px -2px 0 $secondary-medium, -2px 2px 0 $secondary-medium,
-                2px 2px 0 $secondary-medium;
         }
     }
 
     &__text {
         text-transform: uppercase;
+    }
+}
+
+// experimental CSS text stroke
+
+@supports (-webkit-text-stroke: 2px $secondary-medium) {
+    .s-banner--big .s-banner__heading {
+        font-weight: lighter;
+        color: $secondary-medium;
+        -webkit-text-stroke: 2px $secondary-medium;
+        -webkit-text-fill-color: $primary-medium;
     }
 }

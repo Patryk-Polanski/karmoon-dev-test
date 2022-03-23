@@ -31,3 +31,14 @@
         }
     }
 }
+
+// experimental CSS text stroke
+
+@supports (-webkit-text-stroke: 1px $primary-medium) {
+    .s-projects__heading:last-of-type {
+        font-weight: lighter;
+        color: $secondary-medium;
+        -webkit-text-stroke: 1px $primary-medium;
+        -webkit-text-fill-color: $secondary-medium;
+    }
+}

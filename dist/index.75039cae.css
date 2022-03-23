@@ -187,6 +187,15 @@ p {
 .small-text {
   font-size: 1.3rem;
 }
+.btn {
+  cursor: pointer;
+}
+.btn__primary {
+  transition: color 0.2s ease-in;
+}
+.btn__primary:hover {
+  color: #707070;
+}
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -238,11 +247,17 @@ body {
   font-size: 10rem;
   letter-spacing: 0.9rem;
   line-height: 12.7rem;
-  color: #ffffff;
-  text-shadow: -2px -2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, 2px 2px 0 #000000;
 }
 .s-banner__text {
   text-transform: uppercase;
+}
+@supports (-webkit-text-stroke: 2px #000000) {
+  .s-banner--big .s-banner__heading {
+    font-weight: lighter;
+    color: #000000;
+    -webkit-text-stroke: 2px #000000;
+    -webkit-text-fill-color: #ffffff;
+  }
 }
 .s-footer {
   align-items: center;
@@ -346,6 +361,14 @@ body {
 .s-projects__card-single:nth-of-type(2) {
   transform: translateY(-8rem);
 }
+@supports (-webkit-text-stroke: 1px #ffffff) {
+  .s-projects__heading:last-of-type {
+    font-weight: lighter;
+    color: #000000;
+    -webkit-text-stroke: 1px #ffffff;
+    -webkit-text-fill-color: #000000;
+  }
+}
 .s-team {
   padding: 9.8rem 12.6rem 30.8rem;
 }
@@ -414,6 +437,20 @@ body {
 }
 .c-navigation__list-item-link {
   text-transform: uppercase;
+  position: relative;
+}
+.c-navigation__list-item-link:hover::before {
+  width: 3rem;
+}
+.c-navigation__list-item-link::before {
+  content: "";
+  height: 1px;
+  width: 0px;
+  background-color: #000000;
+  position: absolute;
+  left: -0.2rem;
+  bottom: -0.5rem;
+  transition: width 0.4s ease-out;
 }
 .c-project-card {
   display: flex;
