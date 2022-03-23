@@ -1,21 +1,9 @@
 @font-face {
     font-family: Lerty;
-    src: url('../fonts/Lerty-Regular.otf') format('otf'),
-        url('../fonts/Lerty-Regular.ttf') format('truetype'),
-        url('../fonts/Lerty-Regular.woff') format('woff'),
-        url('../fonts/Lerty-Regular.woff2') format('woff');
-}
-
-@font-face {
-    font-family: Montserrat;
-    src: url('../fonts/Montserrat-Medium.otf') format('otf'),
-        url('../fonts/Montserrat-Medium.ttf') format('truetype'),
-        url('../fonts/Montserrat-Medium.woff') format('woff'),
-        url('../fonts/Montserrat-Medium.woff2') format('woff'),
-        url('../fonts/Montserrat-Bold.otf') format('oft'),
-        url('../fonts/Montserrat-Bold.otf') format('oft'),
-        url('../fonts/Montserrat-Bold.otf') format('oft'),
-        url('../fonts/Montserrat-Bold.otf') format('oft');
+    src: url('../fonts/Lerty-Outline.otf') format('otf'),
+        url('../fonts/Lerty-Outline.ttf') format('truetype'),
+        url('../fonts/Lerty-Outline.woff') format('woff'),
+        url('../fonts/Lerty-Outline.woff2') format('woff');
 }
 
 @font-face {
@@ -26,10 +14,18 @@
         url('../fonts/Helvetica-Neue-Medium.woff2') format('woff');
 }
 
+@font-face {
+    font-family: Kraftig Test;
+    src: url('../fonts/KraftigTest.otf') format('otf'),
+        url('../fonts/KraftigTest.ttf') format('truetype'),
+        url('../fonts/KraftigTest.woff') format('woff'),
+        url('../fonts/KraftigTest.woff2') format('woff');
+}
+
 // ZONE - mixins
 
 @mixin font-family-one() {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Kraftig Test', sans-serif;
 }
 
 @mixin font-family-two() {

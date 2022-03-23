@@ -129,15 +129,15 @@ table {
 }
 @font-face {
   font-family: Lerty;
-  src: url("Lerty-Regular.bcd5028c.otf") format("otf"), url("Lerty-Regular.02818e33.ttf") format("truetype"), url("Lerty-Regular.387f4034.woff") format("woff"), url("Lerty-Regular.1bc4bcd0.woff2") format("woff");
-}
-@font-face {
-  font-family: Montserrat;
-  src: url("Montserrat-Medium.8c181adb.otf") format("otf"), url("Montserrat-Medium.687c1016.ttf") format("truetype"), url("Montserrat-Medium.7ea61872.woff") format("woff"), url("Montserrat-Medium.253303ac.woff2") format("woff"), url("Montserrat-Bold.6461d5c9.otf") format("oft"), url("Montserrat-Bold.6461d5c9.otf") format("oft"), url("Montserrat-Bold.6461d5c9.otf") format("oft"), url("Montserrat-Bold.6461d5c9.otf") format("oft");
+  src: url("Lerty-Outline.8b2defb5.otf") format("otf"), url("Lerty-Outline.648b6b4e.ttf") format("truetype"), url("Lerty-Outline.15fa4070.woff") format("woff"), url("Lerty-Outline.d11c6cf0.woff2") format("woff");
 }
 @font-face {
   font-family: Helvetica Neue;
   src: url("Helvetica-Neue-Medium.1f1f9b34.otf") format("otf"), url("Helvetica-Neue-Medium.71b3b6fd.ttf") format("truetype"), url("Helvetica-Neue-Medium.110c6a03.woff") format("woff"), url("Helvetica-Neue-Medium.df044cee.woff2") format("woff");
+}
+@font-face {
+  font-family: Kraftig Test;
+  src: url("KraftigTest.1ee9dc34.otf") format("otf"), url("KraftigTest.04bb32d9.ttf") format("truetype"), url("KraftigTest.aebe3454.woff") format("woff"), url("KraftigTest.6969970c.woff2") format("woff");
 }
 h1,
 h2,
@@ -145,7 +145,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Kraftig Test", sans-serif;
   color: #000000;
 }
 h1 {
@@ -166,7 +166,7 @@ ul,
 ol,
 blockquote,
 a {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Kraftig Test", sans-serif;
   color: #000000;
   font-size: 1.8rem;
 }
@@ -267,7 +267,7 @@ body {
 }
 .s-landing__text-wrapper {
   text-align: left;
-  width: 80rem;
+  width: 83.4rem;
 }
 .s-landing__heading {
   color: #ffffff;
