@@ -7,4 +7,18 @@
             color: $tertiary-medium;
         }
     }
+
+    &__secondary {
+        & svg * {
+            transition: all 0.2s ease-in;
+        }
+
+        &:hover {
+            & svg * {
+                color: $tertiary-medium;
+                fill: $tertiary-medium;
+                stroke: $tertiary-medium;
+            }
+        }
+    }
 }

@@ -1,9 +1,13 @@
 .s-header {
     align-items: center;
+    background-color: $primary-medium;
     display: flex;
     justify-content: space-between;
     padding: 2.5rem;
     padding-bottom: 2.1rem;
+    position: sticky;
+    top: 0;
+    z-index: 5;
 
     &__settings-wrapper {
         align-items: center;
@@ -22,10 +26,8 @@
     }
 
     &__search-icon {
-        height: 20px;
     }
 
     &__profile-icon {
-        height: 20px;
     }
 }

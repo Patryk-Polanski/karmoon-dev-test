@@ -196,6 +196,20 @@ p {
 .btn__primary:hover {
   color: #707070;
 }
+.btn__secondary svg * {
+  transition: all 0.2s ease-in;
+}
+.btn__secondary:hover svg * {
+  color: #707070;
+  fill: #707070;
+  stroke: #707070;
+}
+.svg--search {
+  height: 20px;
+}
+.svg--profile {
+  height: 20px;
+}
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -207,7 +221,6 @@ body {
 }
 .container {
   width: 100vw;
-  overflow: hidden;
   margin: 0 auto;
   max-width: 2000px;
 }
@@ -286,10 +299,14 @@ body {
 }
 .s-header {
   align-items: center;
+  background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   padding: 2.5rem;
   padding-bottom: 2.1rem;
+  position: sticky;
+  top: 0;
+  z-index: 5;
 }
 .s-header__settings-wrapper {
   align-items: center;
@@ -303,12 +320,6 @@ body {
 }
 .s-header__search-icon-link {
   margin-right: 2.7rem;
-}
-.s-header__search-icon {
-  height: 20px;
-}
-.s-header__profile-icon {
-  height: 20px;
 }
 .s-landing {
   position: relative;
