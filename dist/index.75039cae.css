@@ -133,7 +133,7 @@ table {
 }
 @font-face {
   font-family: Helvetica Neue;
-  src: url("Helvetica-Neue-Medium.1f1f9b34.otf") format("otf"), url("Helvetica-Neue-Medium.71b3b6fd.ttf") format("truetype"), url("Helvetica-Neue-Medium.110c6a03.woff") format("woff"), url("Helvetica-Neue-Medium.df044cee.woff2") format("woff");
+  src: url("Helvetica-Neue.6c6facc6.otf") format("otf"), url("Helvetica-Neue.c90e8574.ttf") format("truetype"), url("Helvetica-Neue.63ae0ac3.woff") format("woff"), url("Helvetica-Neue.4b7bc523.woff2") format("woff");
 }
 @font-face {
   font-family: Kraftig Test;
@@ -157,11 +157,13 @@ h1 {
 h2 {
   text-transform: uppercase;
   font-size: 6.1rem;
+  line-height: 7.7rem;
 }
 h3 {
   text-transform: uppercase;
   font-size: 5rem;
   line-height: 5.9rem;
+  letter-spacing: 0.45rem;
 }
 body,
 div,
@@ -174,6 +176,7 @@ a {
   font-family: "Kraftig Test", sans-serif;
   color: #000000;
   font-size: 1.8rem;
+  font-weight: lighter;
 }
 a {
   text-decoration: none;
@@ -282,10 +285,38 @@ body {
   color: #ffffff;
   margin-top: 1.7rem;
 }
+.s-projects {
+  background-color: #000000;
+  padding: 5.3rem 0 13.6rem 0;
+}
+.s-projects__heading {
+  color: #ffffff;
+  font-size: 14rem;
+  white-space: nowrap;
+  line-height: 14rem;
+  letter-spacing: 0.126rem;
+}
+.s-projects__heading:last-of-type {
+  color: #000000;
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+}
+.s-projects__cards-wrapper {
+  align-items: center;
+  display: flex;
+  gap: 16.1rem;
+  justify-content: center;
+  margin-top: 5rem;
+  flex-shrink: 0;
+}
+.s-projects__card-single:nth-of-type(2) {
+  transform: translateY(-8rem);
+}
 .s-team {
   padding: 9.8rem 12.6rem 30.8rem;
 }
 .s-team__subheading {
+  font-family: "Helvetica Neue", sans-serif;
+  letter-spacing: 0.72px;
   margin-top: 1.7rem;
   max-width: 50%;
 }
@@ -346,5 +377,35 @@ body {
 }
 .c-navigation__list-item-link {
   text-transform: uppercase;
+}
+.c-project-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.c-project-card__text-wrapper {
+  margin: 0 4.8rem;
+  position: absolute;
+  bottom: -9rem;
+  left: 0;
+}
+.c-project-card__heading:first-of-type {
+  color: #ffffff;
+  text-transform: none;
+}
+.c-project-card__heading:last-of-type {
+  font-family: "Lerty", sans-serif;
+  color: #05f4fa;
+  font-size: 9rem;
+  font-weight: lighter;
+  margin-top: 2.6rem;
+}
+.c-project-card__technologies {
+  color: #ffffff;
+}
+.c-project-card__image {
+  height: 100%;
+  width: 78rem;
+  object-fit: contain;
 }
 /*# sourceMappingURL=index.75039cae.css.map */

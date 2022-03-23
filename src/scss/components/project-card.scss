@@ -1,0 +1,38 @@
+.c-project-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &__text-wrapper {
+        margin: 0 4.8rem;
+        // transform: translateY(-21.6rem);
+        position: absolute;
+        bottom: -9rem;
+        left: 0;
+    }
+
+    &__heading {
+        &:first-of-type {
+            color: $primary-medium;
+            text-transform: none;
+        }
+
+        &:last-of-type {
+            @include font-family-three;
+            color: $quaternary-medium;
+            font-size: 9rem;
+            font-weight: lighter;
+            margin-top: 2.6rem;
+        }
+    }
+
+    &__technologies {
+        color: $primary-medium;
+    }
+
+    &__image {
+        height: 100%;
+        width: 78rem;
+        object-fit: contain;
+    }
+}

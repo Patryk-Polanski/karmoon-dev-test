@@ -2,6 +2,7 @@
     padding: 9.8rem 12.6rem 30.8rem;
 
     &__subheading {
+        @include font-family-two();
         margin-top: 1.7rem;
         max-width: 50%;
     }

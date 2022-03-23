@@ -8,10 +8,10 @@
 
 @font-face {
     font-family: Helvetica Neue;
-    src: url('../fonts/Helvetica-Neue-Medium.otf') format('otf'),
-        url('../fonts/Helvetica-Neue-Medium.ttf') format('truetype'),
-        url('../fonts/Helvetica-Neue-Medium.woff') format('woff'),
-        url('../fonts/Helvetica-Neue-Medium.woff2') format('woff');
+    src: url('../fonts/Helvetica-Neue.otf') format('otf'),
+        url('../fonts/Helvetica-Neue.ttf') format('truetype'),
+        url('../fonts/Helvetica-Neue.woff') format('woff'),
+        url('../fonts/Helvetica-Neue.woff2') format('woff');
 }
 
 @font-face {
@@ -30,6 +30,7 @@
 
 @mixin font-family-two() {
     font-family: 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.72px;
 }
 
 @mixin font-family-three() {
@@ -58,12 +59,14 @@ h1 {
 h2 {
     text-transform: uppercase;
     font-size: 6.1rem;
+    line-height: 7.7rem;
 }
 
 h3 {
     text-transform: uppercase;
     font-size: 5rem;
     line-height: 5.9rem;
+    letter-spacing: 0.45rem;
 }
 
 body,
@@ -77,6 +80,7 @@ a {
     @include font-family-one();
     color: $secondary-medium;
     font-size: 1.8rem;
+    font-weight: lighter;
 }
 
 a {

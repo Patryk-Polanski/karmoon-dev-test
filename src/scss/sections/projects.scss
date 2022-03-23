@@ -1,0 +1,33 @@
+.s-projects {
+    background-color: $secondary-medium;
+    padding: 5.3rem 0 13.6rem 0;
+
+    &__heading {
+        color: $primary-medium;
+        font-size: 14rem;
+        white-space: nowrap;
+        line-height: 14rem;
+        letter-spacing: 0.126rem;
+
+        &:last-of-type {
+            color: $secondary-medium;
+            text-shadow: -1px -1px 0 $primary-medium, 1px -1px 0 $primary-medium,
+                -1px 1px 0 $primary-medium, 1px 1px 0 $primary-medium;
+        }
+    }
+
+    &__cards-wrapper {
+        align-items: center;
+        display: flex;
+        gap: 16.1rem;
+        justify-content: center;
+        margin-top: 5rem;
+        flex-shrink: 0;
+    }
+
+    &__card-single {
+        &:nth-of-type(2) {
+            transform: translateY(-8rem);
+        }
+    }
+}
