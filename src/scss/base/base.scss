@@ -13,11 +13,12 @@ body {
     width: 100vw;
     overflow: hidden;
     margin: 0 auto;
+    max-width: 2000px;
 }
 
 .content-limit {
     margin: 0 auto;
-    max-width: 1640px;
+    max-width: 1440px;
 }
 
 // ZONE - custom scrollbar styles

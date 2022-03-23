@@ -1,0 +1,29 @@
+.s-team {
+    padding: 9.8rem 12.6rem 30.8rem;
+
+    &__subheading {
+        margin-top: 1.7rem;
+        max-width: 50%;
+    }
+
+    &__gallery {
+        margin-top: 5.5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__image-wrapper {
+        max-width: 64.2rem;
+
+        &:last-child {
+            transform: translateY(16rem);
+        }
+    }
+
+    &__image {
+        height: 100%;
+        object-fit: contain;
+        width: 100%;
+        counter-reset: unset;
+    }
+}

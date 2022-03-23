@@ -147,16 +147,21 @@ h5,
 h6 {
   font-family: "Kraftig Test", sans-serif;
   color: #000000;
+  font-weight: bold;
 }
 h1 {
+  text-transform: uppercase;
   font-size: 9rem;
   line-height: 9.9rem;
 }
 h2 {
+  text-transform: uppercase;
   font-size: 6.1rem;
 }
 h3 {
+  text-transform: uppercase;
   font-size: 5rem;
+  line-height: 5.9rem;
 }
 body,
 div,
@@ -192,10 +197,11 @@ body {
   width: 100vw;
   overflow: hidden;
   margin: 0 auto;
+  max-width: 2000px;
 }
 .content-limit {
   margin: 0 auto;
-  max-width: 1640px;
+  max-width: 1440px;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -267,16 +273,38 @@ body {
 }
 .s-landing__text-wrapper {
   text-align: left;
-  width: 83.4rem;
+  max-width: 83.4rem;
 }
 .s-landing__heading {
   color: #ffffff;
-  font-weight: bolder;
-  text-transform: uppercase;
 }
 .s-landing__subheading {
   color: #ffffff;
   margin-top: 1.7rem;
+}
+.s-team {
+  padding: 9.8rem 12.6rem 30.8rem;
+}
+.s-team__subheading {
+  margin-top: 1.7rem;
+  max-width: 50%;
+}
+.s-team__gallery {
+  margin-top: 5.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.s-team__image-wrapper {
+  max-width: 64.2rem;
+}
+.s-team__image-wrapper:last-child {
+  transform: translateY(16rem);
+}
+.s-team__image {
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+  counter-reset: unset;
 }
 .c-dropdown {
   cursor: pointer;
