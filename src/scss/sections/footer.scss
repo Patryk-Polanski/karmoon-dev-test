@@ -1,0 +1,29 @@
+.s-footer {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 4.6rem 2.6rem 5.9rem;
+
+    &__links-wrapper {
+        justify-content: flex-end;
+        display: flex;
+        gap: 3rem;
+        flex: 1;
+        flex-basis: 0;
+    }
+
+    &__link {
+        text-transform: uppercase;
+    }
+
+    &__copyright,
+    &__link {
+        font-size: 1.1rem;
+        @include font-family-two();
+    }
+
+    &__copyright {
+        flex: 1;
+        flex-basis: 0;
+    }
+}

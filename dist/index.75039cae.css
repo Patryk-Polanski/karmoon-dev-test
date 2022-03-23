@@ -244,6 +244,31 @@ body {
 .s-banner__text {
   text-transform: uppercase;
 }
+.s-footer {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 4.6rem 2.6rem 5.9rem;
+}
+.s-footer__links-wrapper {
+  justify-content: flex-end;
+  display: flex;
+  gap: 3rem;
+  flex: 1;
+  flex-basis: 0;
+}
+.s-footer__link {
+  text-transform: uppercase;
+}
+.s-footer__copyright, .s-footer__link {
+  font-size: 1.1rem;
+  font-family: "Helvetica Neue", sans-serif;
+  letter-spacing: 0.72px;
+}
+.s-footer__copyright {
+  flex: 1;
+  flex-basis: 0;
+}
 .s-header {
   align-items: center;
   display: flex;
@@ -359,10 +384,12 @@ body {
 .c-logo {
   align-items: center;
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+}
+.c-logo--left {
   flex: 1;
   flex-basis: 0;
-  flex-direction: column;
+  align-items: flex-start;
 }
 .c-logo__text {
   font-size: 0.8rem;
