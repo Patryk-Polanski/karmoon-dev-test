@@ -13,10 +13,9 @@
 
 <body>
     <div class="container">
-
         <!-- Header section -->
 
-        <header class="s-header">
+        <header class="s-header js-header">
             <div class="c-logo c-logo--left">
                 <a href="#" class="c-logo__link">
                     <div class="c-logo__image-wrapper">
@@ -25,7 +24,7 @@
                     <span class="c-logo__text">Karmoon</span>
                 </a>
             </div>
-            <div class="c-navigation">
+            <div class="c-navigation js-navigation">
                 <ul class="c-navigation__list">
                     <li class="c-navigation__list-item">
                         <a href="#" class="c-navigation__list-item-link small-text">Shop</a>
@@ -60,7 +59,6 @@
                     </svg>
                 </a>
             </div>
-
         </header>
 
         <!-- Header section end -->
@@ -78,15 +76,17 @@
         <!-- Landing section -->
 
         <section class="s-landing">
-            <img srcset="./img/image-hero.png, ./img/image-hero-2x.png 2x" src="./img/image-hero.png"
-                alt="Decorative image" class="s-landing__hero">
-            <div class="s-landing__text-wrapper">
-                <h1 class="s-landing__heading">Ecommerce is <br> what we do</h1>
-                <p class="s-landing__subheading">Collaboration is key, both internally and externally. We believe that
-                    the
-                    best work begins and thrives with an open and honest dialogue amongst our designers, developers,
-                    strategists and clients alike.</p>
-            </div>
+            <span class="js-header-helper-top"></>
+                <img srcset="./img/image-hero.png, ./img/image-hero-2x.png 2x" src="./img/image-hero.png"
+                    alt="Decorative image" class="s-landing__hero">
+                <div class="s-landing__text-wrapper">
+                    <h1 class="s-landing__heading">Ecommerce is <br> what we do</h1>
+                    <p class="s-landing__subheading">Collaboration is key, both internally and externally. We believe
+                        that
+                        the
+                        best work begins and thrives with an open and honest dialogue amongst our designers, developers,
+                        strategists and clients alike.</p>
+                </div>
         </section>
 
         <!-- Landing section end -->
@@ -94,6 +94,7 @@
         <!-- Team section -->
 
         <section class="s-team">
+            <span class="js-header-helper-bottom"></span>
             <h3 class="s-team__heading">Meet the team, <br> a group of star wars <br> obsessed coders</h3>
             <p class="s-team__subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra
                 luctus purus, ac porttitor ipsum mollis ut. Proin blandit sit amet mi ut ornare. In quis velit fringilla

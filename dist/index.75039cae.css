@@ -307,6 +307,24 @@ body {
   position: sticky;
   top: 0;
   z-index: 5;
+  transition: padding 0.3s ease-out;
+  counter-reset: unset;
+}
+.s-header::before {
+  content: "";
+  background-color: #000000;
+  bottom: 0;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  width: 0;
+  transition: width 0.5s ease-out;
+}
+.s-header--squashed {
+  padding: 1.5rem 2.5rem 1.2rem;
+}
+.s-header--squashed::before {
+  width: 100%;
 }
 .s-header__settings-wrapper {
   align-items: center;
@@ -349,6 +367,7 @@ body {
 .s-projects {
   background-color: #000000;
   padding: 5.3rem 0 13.6rem 0;
+  overflow-x: hidden;
 }
 .s-projects__heading {
   color: #ffffff;
