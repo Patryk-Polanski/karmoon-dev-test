@@ -1,19 +1,45 @@
 .s-banner {
+    align-items: center;
     border-bottom: 2px solid $secondary-medium;
     border-top: 2px solid $secondary-medium;
+    padding: 1.8rem 0 1.7rem;
     display: flex;
-    justify-content: space-between;
-    padding: 1.1rem 0 1.2rem;
-    width: 106%;
-    transform: translateX(-3%);
+    position: relative;
+    width: 100%;
+
+    &__text-wrapper {
+        position: absolute;
+        display: flex;
+        justify-content: space-evenly;
+        animation: sideScroll 60s linear infinite forwards;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+
+        &--secondary {
+            left: -100%;
+        }
+    }
 
     &--big {
-        padding: 2.9rem 0 4.9rem 0;
+        padding: 6rem 0 10rem 0;
+        counter-reset: unset;
+
+        & .s-banner__text-wrapper--secondary {
+            left: -120%;
+        }
 
         & .s-banner__heading {
+            position: absolute;
+            left: 0;
+            top: 50%;
             font-size: 10rem;
             letter-spacing: 0.9rem;
             line-height: 12.7rem;
+            transform: translateY(-50%);
+            white-space: nowrap;
+            animation: sideScroll 100s linear infinite forwards;
         }
     }
 
