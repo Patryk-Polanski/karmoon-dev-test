@@ -8,6 +8,18 @@
     }
 }
 
+@keyframes headingsScroll {
+    0% {
+        transform: translateX(-50%);
+    }
+    50% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
 @keyframes sideScrollAndBack {
     0% {
         transform: translateX(0);
@@ -21,4 +33,16 @@
     100% {
         transform: translateX(0);
     }
-} ;
+}
+
+@keyframes projectCardsScroll {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

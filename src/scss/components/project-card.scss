@@ -3,6 +3,32 @@
     flex-direction: column;
     position: relative;
 
+    &:hover {
+        left: 0vw;
+        & .c-project-card__image-wrapper {
+            &::before,
+            &::after {
+                height: 50px;
+            }
+        }
+
+        & .c-project-card__image-dummy {
+            &::before,
+            &::after {
+                width: 50px;
+            }
+        }
+
+        & .c-project-card__image {
+            filter: grayscale(1);
+        }
+
+        & .c-project-card__button {
+            opacity: 1;
+            transform: translateX(-50%) translateY(-50%);
+        }
+    }
+
     &__text-wrapper {
         margin: 0 4.8rem;
         // transform: translateY(-21.6rem);
@@ -30,9 +56,61 @@
         color: $primary-medium;
     }
 
+    &__image-wrapper {
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 8px;
+            height: 0;
+            background-color: $quaternary-medium;
+            transition: height 0.3s ease-out;
+            z-index: 2;
+        }
+
+        &::after {
+            left: auto;
+            right: 0;
+        }
+    }
+
     &__image {
         height: 100%;
         width: 78rem;
         object-fit: contain;
+        position: relative;
+        transition: filter 0.3s ease-out;
+    }
+
+    &__image-dummy {
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 8px;
+            background-color: $quaternary-medium;
+            transition: width 0.3s ease-out;
+            z-index: 2;
+        }
+
+        &::after {
+            left: auto;
+            right: 0;
+        }
+    }
+
+    &__button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-70%);
+        z-index: 3;
+        opacity: 0;
+        background-color: rgba($secondary-medium, 0.4);
     }
 }

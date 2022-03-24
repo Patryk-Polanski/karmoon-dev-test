@@ -13,7 +13,7 @@
         justify-content: space-evenly;
         width: 100%;
         top: 50%;
-        transform: translateY(-50%);
+        // transform: translateY(-50%);
         left: 0;
         animation: bannerSideScroll 60s linear infinite forwards;
 
@@ -37,7 +37,7 @@
             font-size: 10rem;
             letter-spacing: 0.9rem;
             line-height: 12.7rem;
-            transform: translateY(-50%);
+            // transform: translateY(-50%);
             white-space: nowrap;
             animation: bannerSideScroll 100s linear infinite forwards;
         }

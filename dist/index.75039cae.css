@@ -204,6 +204,17 @@ p {
   fill: #707070;
   stroke: #707070;
 }
+.btn__tertiary {
+  border: 1px solid #ffffff;
+  border-radius: 1rem;
+  color: #ffffff;
+  padding: 1.2rem 2rem;
+  transition: all 0.3s ease-out;
+}
+.btn__tertiary:hover {
+  border: 1px solid #05f4fa;
+  color: #05f4fa;
+}
 .svg--search {
   height: 20px;
 }
@@ -218,6 +229,17 @@ p {
     transform: translateX(100%) translateY(-50%);
   }
 }
+@keyframes headingsScroll {
+  0% {
+    transform: translateX(-50%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 @keyframes sideScrollAndBack {
   0% {
     transform: translateX(0);
@@ -227,6 +249,17 @@ p {
   }
   75% {
     transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes projectCardsScroll {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50%);
   }
   100% {
     transform: translateX(0);
@@ -281,7 +314,6 @@ body {
   justify-content: space-evenly;
   width: 100%;
   top: 50%;
-  transform: translateY(-50%);
   left: 0;
   animation: bannerSideScroll 60s linear infinite forwards;
 }
@@ -302,7 +334,6 @@ body {
   font-size: 10rem;
   letter-spacing: 0.9rem;
   line-height: 12.7rem;
-  transform: translateY(-50%);
   white-space: nowrap;
   animation: bannerSideScroll 100s linear infinite forwards;
 }
@@ -421,12 +452,13 @@ body {
   white-space: nowrap;
   line-height: 14rem;
   letter-spacing: 1.26rem;
-  animation: sideScrollAndBack 75s ease-in-out infinite forwards;
+  animation: headingsScroll 40s ease-in-out infinite forwards;
+  transform: translateX(-50%);
 }
 .s-projects__heading:last-of-type {
   color: #000000;
   text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
-  animation: sideScrollAndBack 60s ease-in-out infinite reverse;
+  animation: headingsScroll 60s ease-in-out infinite reverse;
 }
 .s-projects__cards-wrapper {
   align-items: center;
@@ -435,9 +467,28 @@ body {
   justify-content: center;
   margin-top: 5rem;
   flex-shrink: 0;
+  transition: transform 0.5s ease-out;
+}
+.s-projects__cards-wrapper--shift-left-js {
+  transform: translateX(-50%);
+}
+.s-projects__cards-wrapper--shift-right-js {
+  transform: translateX(50%);
+}
+.s-projects__card-single {
+  transition: transform 0.6s ease-out;
+}
+.s-projects__card-single:hover {
+  z-index: 4;
+}
+.s-projects__card-single:hover:nth-of-type(1) {
+  transform: translateX(0);
+}
+.s-projects__card-single:hover:nth-of-type(3) {
+  transform: translateX(0);
 }
 .s-projects__card-single:nth-of-type(2) {
-  transform: translateY(-8rem);
+  margin-top: -18rem;
 }
 @supports (-webkit-text-stroke: 1px #ffffff) {
   .s-projects__heading:last-of-type {
@@ -537,6 +588,22 @@ body {
   flex-direction: column;
   position: relative;
 }
+.c-project-card:hover {
+  left: 0vw;
+}
+.c-project-card:hover .c-project-card__image-wrapper::before, .c-project-card:hover .c-project-card__image-wrapper::after {
+  height: 50px;
+}
+.c-project-card:hover .c-project-card__image-dummy::before, .c-project-card:hover .c-project-card__image-dummy::after {
+  width: 50px;
+}
+.c-project-card:hover .c-project-card__image {
+  filter: grayscale(1);
+}
+.c-project-card:hover .c-project-card__button {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-50%);
+}
 .c-project-card__text-wrapper {
   margin: 0 4.8rem;
   position: absolute;
@@ -557,9 +624,50 @@ body {
 .c-project-card__technologies {
   color: #ffffff;
 }
+.c-project-card__image-wrapper::before, .c-project-card__image-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 0;
+  background-color: #05f4fa;
+  transition: height 0.3s ease-out;
+  z-index: 2;
+}
+.c-project-card__image-wrapper::after {
+  left: auto;
+  right: 0;
+}
 .c-project-card__image {
   height: 100%;
   width: 78rem;
   object-fit: contain;
+  position: relative;
+  transition: filter 0.3s ease-out;
+}
+.c-project-card__image-dummy::before, .c-project-card__image-dummy::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 8px;
+  background-color: #05f4fa;
+  transition: width 0.3s ease-out;
+  z-index: 2;
+}
+.c-project-card__image-dummy::after {
+  left: auto;
+  right: 0;
+}
+.c-project-card__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-70%);
+  z-index: 3;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 /*# sourceMappingURL=index.75039cae.css.map */

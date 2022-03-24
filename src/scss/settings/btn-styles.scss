@@ -21,4 +21,17 @@
             }
         }
     }
+
+    &__tertiary {
+        border: 1px solid $primary-medium;
+        border-radius: 1rem;
+        color: $primary-medium;
+        padding: 1.2rem 2rem;
+        transition: all 0.3s ease-out;
+
+        &:hover {
+            border: 1px solid $quaternary-medium;
+            color: $quaternary-medium;
+        }
+    }
 }
