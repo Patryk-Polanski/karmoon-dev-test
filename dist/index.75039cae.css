@@ -210,12 +210,26 @@ p {
 .svg--profile {
   height: 20px;
 }
-@keyframes sideScroll {
+@keyframes bannerSideScroll {
   from {
     transform: translateX(0) translateY(-50%);
   }
   to {
     transform: translateX(100%) translateY(-50%);
+  }
+}
+@keyframes sideScrollAndBack {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(50%);
+  }
+  75% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 html {
@@ -265,11 +279,11 @@ body {
   position: absolute;
   display: flex;
   justify-content: space-evenly;
-  animation: sideScroll 60s linear infinite forwards;
   width: 100%;
   top: 50%;
   transform: translateY(-50%);
   left: 0;
+  animation: bannerSideScroll 60s linear infinite forwards;
 }
 .s-banner__text-wrapper--secondary {
   left: -100%;
@@ -290,7 +304,7 @@ body {
   line-height: 12.7rem;
   transform: translateY(-50%);
   white-space: nowrap;
-  animation: sideScroll 100s linear infinite forwards;
+  animation: bannerSideScroll 100s linear infinite forwards;
 }
 .s-banner__text {
   text-transform: uppercase;
@@ -401,15 +415,18 @@ body {
   overflow-x: hidden;
 }
 .s-projects__heading {
+  text-align: center;
   color: #ffffff;
   font-size: 14rem;
   white-space: nowrap;
   line-height: 14rem;
   letter-spacing: 1.26rem;
+  animation: sideScrollAndBack 75s ease-in-out infinite forwards;
 }
 .s-projects__heading:last-of-type {
   color: #000000;
   text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+  animation: sideScrollAndBack 60s ease-in-out infinite reverse;
 }
 .s-projects__cards-wrapper {
   align-items: center;

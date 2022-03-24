@@ -1,5 +1,5 @@
 // banner text scroll animation
-@keyframes sideScroll {
+@keyframes bannerSideScroll {
     from {
         transform: translateX(0) translateY(-50%);
     }
@@ -7,3 +7,18 @@
         transform: translateX(100%) translateY(-50%);
     }
 }
+
+@keyframes sideScrollAndBack {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(50%);
+    }
+    75% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+} ;

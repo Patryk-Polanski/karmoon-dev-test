@@ -4,16 +4,19 @@
     overflow-x: hidden;
 
     &__heading {
+        text-align: center;
         color: $primary-medium;
         font-size: 14rem;
         white-space: nowrap;
         line-height: 14rem;
         letter-spacing: 1.26rem;
+        animation: sideScrollAndBack 75s ease-in-out infinite forwards;
 
         &:last-of-type {
             color: $secondary-medium;
             text-shadow: -1px -1px 0 $primary-medium, 1px -1px 0 $primary-medium,
                 -1px 1px 0 $primary-medium, 1px 1px 0 $primary-medium;
+            animation: sideScrollAndBack 60s ease-in-out infinite reverse;
         }
     }
 
