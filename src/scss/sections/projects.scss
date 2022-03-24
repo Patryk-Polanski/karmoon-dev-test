@@ -15,8 +15,6 @@
 
         &:last-of-type {
             color: $secondary-medium;
-            text-shadow: -1px -1px 0 $primary-medium, 1px -1px 0 $primary-medium,
-                -1px 1px 0 $primary-medium, 1px 1px 0 $primary-medium;
             animation: headingsScroll 60s ease-in-out infinite reverse;
         }
     }
@@ -24,7 +22,7 @@
     &__cards-wrapper {
         align-items: center;
         display: flex;
-        gap: 16.1rem;
+        gap: 13rem;
         justify-content: center;
         margin-top: 5rem;
         flex-shrink: 0;

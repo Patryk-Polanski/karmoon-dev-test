@@ -1,5 +1,9 @@
 .s-team {
-    padding: 9.8rem 12.6rem 30.8rem;
+    padding: 9.8rem 10.5rem 30.8rem 12.6rem;
+
+    &__heading {
+        white-space: nowrap;
+    }
 
     &__heading,
     &__subheading {
@@ -15,6 +19,7 @@
         margin-top: 5.5rem;
         display: flex;
         justify-content: space-between;
+        gap: 12.5rem;
     }
 
     &__image-wrapper {

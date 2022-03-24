@@ -5,6 +5,7 @@
     padding: 1.8rem 0 1.7rem;
     display: flex;
     position: relative;
+    overflow-x: hidden;
     width: 100%;
 
     &__text-wrapper {
@@ -22,18 +23,15 @@
     }
 
     &--big {
-        padding: 6rem 0 10rem 0;
-        counter-reset: unset;
+        align-items: center;
+        padding: 2.9rem 0 4.8rem 0;
 
         & .s-banner__heading {
-            position: absolute;
-            left: 0;
-            top: 50%;
             font-size: 10rem;
             letter-spacing: 0.9rem;
             line-height: 12.7rem;
             white-space: nowrap;
-            animation: bigBannerSideScroll 60s ease-in-out infinite;
+            animation: headingsScroll 50s ease-in-out infinite;
         }
     }
 
