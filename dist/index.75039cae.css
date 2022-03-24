@@ -229,6 +229,17 @@ p {
     transform: translateX(100%) translateY(-50%);
   }
 }
+@keyframes bigBannerSideScroll {
+  0% {
+    transform: translateX(0%) translateY(-50%);
+  }
+  50% {
+    transform: translateX(25%) translateY(-50%);
+  }
+  100% {
+    transform: translateX(0%) translateY(-50%);
+  }
+}
 @keyframes headingsScroll {
   0% {
     transform: translateX(-50%);
@@ -238,31 +249,6 @@ p {
   }
   100% {
     transform: translateX(-50%);
-  }
-}
-@keyframes sideScrollAndBack {
-  0% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(50%);
-  }
-  75% {
-    transform: translateX(-50%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-@keyframes projectCardsScroll {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(50%);
-  }
-  100% {
-    transform: translateX(0);
   }
 }
 html {
@@ -324,9 +310,6 @@ body {
   padding: 6rem 0 10rem 0;
   counter-reset: unset;
 }
-.s-banner--big .s-banner__text-wrapper--secondary {
-  left: -120%;
-}
 .s-banner--big .s-banner__heading {
   position: absolute;
   left: 0;
@@ -335,7 +318,7 @@ body {
   letter-spacing: 0.9rem;
   line-height: 12.7rem;
   white-space: nowrap;
-  animation: bannerSideScroll 100s linear infinite forwards;
+  animation: bigBannerSideScroll 60s ease-in-out infinite;
 }
 .s-banner__text {
   text-transform: uppercase;
